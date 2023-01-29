@@ -23,22 +23,57 @@
     /* If the <link> doesn't work, use the @import */
     /* @import url(""); */
   </style>
+
+
   <style type="text/css">
     /* Create one of these media queries for each additional viewport size you'd like to fix */
-    @media screen and (min-device-width: 375px) and (max-device-width: 413px) {
+    /* mobile 600px or less */
+    @media screen and (max-width: 600px) {
+      .stories-row {
+        font-size: 34px !important;
+      }
 
-      /* iPhone 6 and 6+ */
-      .email-container {
-        min-width: 375px !important;
+
+      .whatever-table {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+        padding: 0px 0 0 0 !important;
+
+      }
+
+      .whatever-table img {
+        max-width: 600px !important;
+        text-align: center;
+        padding: 0px 0 0 0 !important;
+      }
+
+
+      .see-thru-icon {
+        width: 100%;
+        padding: 32px;
+      }
+
+      .social {
+        width: 50px !important;
+        height: 50px !important;
+      }
+      .ghost-btn{
+        display:block;
+        padding: 20px !important;
+        font-size: 30px !important;
       }
     }
+
+    /* iPhone 6 and 6+ 375px to 413px */
+    @media screen and (min-device-width: 375px) and (max-device-width: 413px) {}
   </style>
   <!-- CSS RESET STYLES : END -->
 
   <!-- RESPONSIVE STYLES : START -->
   <style>
     /* Media Queries */
-    @media screen and (max-width: 600px) {
+    /* @media screen and (max-width: 600px) {
       .stories-row {
         font-size: 34px !important;
       }
@@ -47,7 +82,8 @@
         width: 100%;
         margin: 0;
         text-align: center;
-        padding: px 0 0 0 !important;
+       padding: 0px 0 0 0 !important;
+
       }
 
       .whatever-table img {
@@ -60,7 +96,11 @@
         width: 100%;
         padding: 32px;
       }
-    }
+      .social{
+        width:50px !important;
+        height:50px !important;
+      }
+    } */
   </style>
 </head>
 
@@ -69,7 +109,7 @@
     <tr>
       <td style="background: #a8b9f2;">
         <!-- start of container NOTICE WIDTH 600PX -->
-        <table class="container" width="600px;" align="center" cellspacing="0" cellpadding="0" border="0"
+        <table class="container" width="600" align="center" cellspacing="0" cellpadding="0" border="0"
           style="background-color: #c7c7f7;">
           <!-- !BANNER/header -->
           <tr>
@@ -87,22 +127,22 @@
                     <table cellspacing="0" cellpadding="0" border="0" width="100%" role="presentation">
                       <tr>
                         <td align="center" style="padding: 10px">
-                          <a href="#" style="text-decoration: none; font-size: 14px; font-weight: 100;color: #000000;">
+                          <a href="#" style="text-decoration: none; font-size: 14px; font-weight: 600;color: #000000;">
                             <span>WHAT'S NEW</span></a>
                         </td>
 
                         <td align="center" style="padding: 10px">
-                          <a href="#" style="text-decoration: none; font-size: 14px; font-weight: 100;color: #000000;">
+                          <a href="#" style="text-decoration: none; font-size: 14px; font-weight: 600;color: #000000;">
                             <span>SHOES</span></a>
                         </td>
 
                         <td align="center" style="padding: 10px">
-                          <a href="#" style="text-decoration: none; font-size: 14px; font-weight: 100;color: #000000;">
+                          <a href="#" style="text-decoration: none; font-size: 14px; font-weight: 600;color: #000000;">
                             <span>HANDBAGS</span></a>
                         </td>
 
                         <td align="center" style="padding: 10px">
-                          <a href="#" style="text-decoration: none; font-size: 14px; font-weight: 100;color: #000000;">
+                          <a href="#" style="text-decoration: none; font-size: 14px; font-weight: 600;color: #000000;">
                             <span>STORIES</span></a>
                         </td>
                       </tr>
@@ -127,7 +167,8 @@
           <!--!forever classic ROW -->
           <tr>
             <td>
-              <table class="forever-classic-row" cellspacing="0" cellpadding="0" border="0" margin="0" width="100%" role="presentation">
+              <table class="forever-classic-row" cellspacing="0" cellpadding="0" border="0" margin="0" width="100%"
+                role="presentation">
                 <tr>
                   <td align="center">
                     <img src="https://i.postimg.cc/XYfH2BYq/forever-classic.png" width="600" alt=" forever classic"
@@ -137,7 +178,7 @@
                 <!-- paragraph row -->
                 <tr>
                   <td align="center">
-                    <p style="font-size: 16px;font-weight: 100;
+                    <p style="font-size: 16px;font-weight: 400;
                               padding: 20px 50px 60px 50px; line-height: 1.5; margin: 0;">
                       A new GG handbag thats timeless and classic and is designed to fit everyday essentials.
                     </p>
@@ -150,6 +191,7 @@
                                 text-decoration: none;
                                 border: 1px solid #032b7c;
                                 color: #032b7c;
+                                background-color: #ffffff;
                                 padding: 14px 35px;
                                 width: 400px;
                                 height: 50px;
@@ -173,7 +215,8 @@
                 <!-- row 1 -->
                 <tr>
                   <td>
-                    <table class="whatever-table" width="50%" align="right" cellspacing="0" cellpadding="0" border="0" role="presentation">
+                    <table class="whatever-table" width="50%" align="right" cellspacing="0" cellpadding="0" border="0"
+                      role="presentation">
                       <tr>
                         <td>
                           <img src="https://i.postimg.cc/vBcCS8KK/bag3.png" alt=" green bag" width="300" />
@@ -181,7 +224,8 @@
                       </tr>
                     </table>
 
-                    <table class="whatever-table" width="50%" align="left" cellspacing="0" cellpadding="0" border="0">
+                    <table class="whatever-table" width="50%" align="left" cellspacing="0" cellpadding="0" border="0"
+                      role="presentation">
                       <tr>
                         <td>
                           <img src="https://i.postimg.cc/HW8fwxXc/bag2.png" alt=" brown bag" width="300" />
@@ -193,7 +237,8 @@
                 <!-- TWO-COLUMN-PURSE-ROW 2-->
                 <tr>
                   <td>
-                    <table class="whatever-table" width="50%" align="right" cellspacing="0" cellpadding="0" border="0" role="presentation">
+                    <table class="whatever-table" width="50%" align="right" cellspacing="0" cellpadding="0" border="0"
+                      role="presentation">
                       <tr>
                         <td>
                           <img src="https://i.postimg.cc/pddSpXPd/720-680bag.png" alt="light brown bag" width="300" />
@@ -201,7 +246,8 @@
                       </tr>
                     </table>
 
-                    <table class="whatever-table" width="50%" align="left" cellspacing="0" role="presentation" cellpadding="0" border="0">
+                    <table class="whatever-table" width="50%" align="left" cellspacing="0" role="presentation"
+                      cellpadding="0" border="0">
                       <tr>
                         <td>
                           <img src="https://i.postimg.cc/Y9ZTcKKC/bag1.png" alt="black and white bag" width="300" />
@@ -236,7 +282,7 @@
 
                 <tr>
                   <td align="center" margin="0">
-                    <p style="font-size: 16px; font-weight: 100;
+                    <p style="font-size: 16px; font-weight: 400;
                     padding: 20px 50px 60px 50px; line-height: 1.5;">
                       A new GG monogram handbag within the Ophidia line is designed to fit everyday essentials.
                     </p>
@@ -249,8 +295,9 @@
                           text-decoration: none;
                           border: 1px solid #032b7c;
                           color: #032b7c;
+                          background-color: #ffffff;
                           padding: 14px 35px;
-                          width: 400px;
+                          width:400px;
                           height: 50px;
                           font-size: 14px;
                           border-radius: 2px;
@@ -264,8 +311,7 @@
               </table>
             </td>
           </tr>
-
-          <!-- !footer-->
+          <!-- !need help row -->
           <tr>
             <td style="background-color: #9aa3c9;">
               <table class="" cellspacing="0" cellpadding="0" border="0" margin="0" role="presentation">
@@ -301,228 +347,247 @@
               <table cellspacing="0" cellpadding="0" border="0" margin="0" width="100%" role="presentation">
                 <tr>
                   <td style="padding-top: 20px;padding-bottom: 20px;">
-                    <table class="see-thru-icon" width="150px;" align="left" cellspacing="0" cellpadding="0" border="0">
+
+
+                    <table class="see-thru-icon" width="150px;" align="left" cellspacing="0" cellpadding="0" border="0"
+                      role="presentation">
                       <tr>
                         <td align="center">
-                          <a href="#" style=" text-decoration:none;">
+                          <a href="#" style="text-decoration:none;">
 
                             <img src="https://i.postimg.cc/TYqN0Www/scooter-shipping.png" style="width: 80px;"
                               alt="scooter-shipping">
 
-                            <p style="padding: 10px 15px 0 15px;
-                          font-size: 15px;color:#100d02;margin:0">
+                            <p style="padding: 10px 15px 0 15px;font-size: 15px;color:#100d02;margin:0">
                               Free Shipping 9 to 3 Days
                             </p>
+
+                        </td>
                       </tr>
-                  </td>
-              </table>
+                    </table>
+
+                    <table class="see-thru-icon" width="150px;" align="left" cellspacing="0" cellpadding="0" border="0"
+                      role="presentation">
+                      <tr>
+                        <td align="center">
+                          <a href="#" style="text-decoration:none;">
+
+                            <img src="https://i.postimg.cc/bJt3tZWq/free-returns.png" style="width: 80px;"
+                              alt="free-returns">
+
+                            <p style="padding: 10px 15px 0 15px;font-size: 15px;color: #100d02;margin:0;">
+                              Free Returns
+                            </p>
+                        </td>
+                      </tr>
+                    </table>
 
 
-
-              <table class="see-thru-icon" width="150px;" align="left" cellspacing="0" cellpadding="0" border="0"
-                role="presentation">
-                <tr>
-                  <td align="center">
-                    <a href="#" style="text-decoration:none;">
-                      <img src="https://i.postimg.cc/bJt3tZWq/free-returns.png" style="width: 80px;" alt="free-returns">
-                      <p style="padding: 10px 15px 0 15px;
-                       font-size: 15px;
-                       color: #100d02;margin:0;">
-                        Free Returns
-                      </p>
-                  </td>
-                </tr>
-              </table>
-
-
-              <table class="see-thru-icon" width="150px;" align="left" cellspacing="0" cellpadding="0" border="0"
-                role="presentation">
-                <tr>
-                  <td align="center">
-                    <a href="#" style="text-decoration:none;">
-                      <img src="https://i.postimg.cc/tC5DWQSn/book-calander.png" style="width: 80px;"
-                        alt="book book-calender">
-                      <p style=" padding: 10px 15px 0 15px;font-size:15px;
+                    <table class="see-thru-icon" width="150px;" align="left" cellspacing="0" cellpadding="0" border="0"
+                      role="presentation">
+                      <tr>
+                        <td align="center">
+                          <a href="#" style="text-decoration:none;">
+                            <img src="https://i.postimg.cc/tC5DWQSn/book-calander.png" style="width: 80px;"
+                              alt="book book-calender">
+                            <p style=" padding: 10px 15px 0 15px;font-size:15px;
                        color: #100d02;margin:0">
-                        Book Your Private Appointment
-                      </p>
-                  </td>
-                </tr>
-              </table>
+                              Book Your Private Appointment
+                            </p>
+                        </td>
+                      </tr>
+                    </table>
 
 
 
-              <table class="see-thru-icon" width="150px;" align="left" cellspacing="0" cellpadding="0" border="0">
-                <tr>
-                  <td align="center">
-                    <a href="#" style="text-decoration:none;">
-                      <img src="https://i.postimg.cc/c1fF18fm/digi-showroom.png" style="width: 80px;"
-                        alt="digital-showroom">
-                      <p style="padding: 10px 15px 0 15px;font-size:15px;
+                    <table class="see-thru-icon" width="150px;" align="left" cellspacing="0" cellpadding="0" border="0"
+                      role="presentation">
+                      <tr>
+                        <td align="center">
+                          <a href="#" style="text-decoration:none;">
+                            <img src="https://i.postimg.cc/c1fF18fm/digi-showroom.png" style="width: 80px;"
+                              alt="digital-showroom">
+                            <p style="padding: 10px 15px 0 15px;font-size:15px;
                       color: #100d02;margin:0;">
-                        Digital Showroom Experience
-                        <p>
+                              Digital Showroom Experience
+                              <p>
+                        </td>
+                      </tr>
+                    </table>
                   </td>
                 </tr>
-              </table>
-            </td>
-          </tr>
-          <!-- see thru icons ROW 2 -->
-          <tr>
-            <td align="center">
-              <table class="see-thru-icon" width="150px;" align="left" cellspacing="0" cellpadding="0" border="0">
+                <!-- see thru icons ROW 2 -->
                 <tr>
                   <td align="center">
-                    <a href="#" style="text-decoration:none;">
-                      <img src="https://i.postimg.cc/4xxP1LqL/aftersalesupport.png" style="width: 80px;"
-                        alt="sales-support">
-                      <p style="padding: 10px 15px 0 15px; font-size: 15px; color:#100d02;margin:0;"> After Sale Support
-                      </p>
-                  </td>
-                </tr>
-              </table>
+                    <table class="see-thru-icon" width="150px;" align="left" cellspacing="0" cellpadding="0" border="0"
+                      role="presentation">
+                      <tr>
+                        <td align="center">
+                          <a href="#" style="text-decoration:none;">
+                            <img src="https://i.postimg.cc/4xxP1LqL/aftersalesupport.png" style="width: 80px;"
+                              alt="sales-support">
+                            <p style="padding: 10px 15px 0 15px; font-size: 15px; color:#100d02;margin:0;"> After Sale
+                              Support
+                            </p>
+                        </td>
+                      </tr>
+                    </table>
 
 
-              <table class="see-thru-icon" width="150px;" align="left" cellspacing="0" cellpadding="0" border="0">
-                <tr>
-                  <td align="center">
-                    <a href="#" style="text-decoration:none;">
-                      <img src="https://i.postimg.cc/tJGDtXGW/eco.png" style="width: 80px;" alt="eco-packaging">
-                      <p style="padding: 10px 15px 0 15px;font-size: 15px;
+                    <table class="see-thru-icon" width="150px;" align="left" cellspacing="0" cellpadding="0" border="0"
+                      role="presentation">
+                      <tr>
+                        <td align="center">
+                          <a href="#" style="text-decoration:none;">
+                            <img src="https://i.postimg.cc/tJGDtXGW/eco.png" style="width: 80px;" alt="eco-packaging">
+                            <p style="padding: 10px 15px 0 15px;font-size: 15px;
                color: #100d02;margin:0;">
-                        New Eco Packaging
-                      </p>
+                              New Eco Packaging
+                            </p>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <table class="see-thru-icon" width="150px;" align="left" cellspacing="0" cellpadding="0" border="0"
+                      role="presentation">
+                      <tr>
+                        <td align="center">
+                          <a href="#" style="text-decoration:none;">
+                            <img src="https://i.postimg.cc/wM52wS9P/digital-gift.png" style="width: 80px;"
+                              alt="digital-gifting">
+                            <p style=" padding: 10px 15px 0 15px;font-size:15px; color: #100d02;margin:0;">
+                              Digital Gifting
+                            </p>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <table class="see-thru-icon" width="150px;" align="left" cellspacing="0" cellpadding="0" border="0"
+                      role="presentation">
+                      <tr>
+                        <td align="center">
+                          <a href="#" style="text-decoration:none">
+                            <img src="https://i.postimg.cc/qvDLDcdk/affirm.png" style="width: 80px;"
+                              alt="digital-gifting">
+                            <p style=" padding: 10px 15px 0 15px;font-size:15px; color: #100d02;margin:0;">
+                              Affirm Payments
+                            </p>
+                        </td>
+                      </tr>
+                    </table>
                   </td>
                 </tr>
-              </table>
-
-              <table class="see-thru-icon" width="150px;" align="left" cellspacing="0" cellpadding="0" border="0">
+                <!-- !footer -->
                 <tr>
-                  <td align="center">
-                    <a href="#" style="text-decoration:none;">
-                      <img src="https://i.postimg.cc/wM52wS9P/digital-gift.png" style="width: 80px;"
-                        alt="digital-gifting">
-                      <p style=" padding: 10px 15px 0 15px;font-size:15px; color: #100d02;margin:0;">
-                        Digital Gifting
-                      </p>
-                  </td>
-                </tr>
-              </table>
+                  <td>
+                    <table cellspacing="0" cellpadding="0" border="0" margin="0" role="presentation" width="100%">
 
-              <table class="see-thru-icon" width="150px;" align="left" cellspacing="0" cellpadding="0" border="0">
-                <tr>
-                  <td align="center">
-                    <a href="#" style="text-decoration:none">
-                      <img src="https://i.postimg.cc/qvDLDcdk/affirm.png" style="width: 80px;" alt="digital-gifting">
-                      <p style=" padding: 10px 15px 0 15px;font-size:15px; color: #100d02;margin:0;">
-                        Affirm Payments
-                      </p>
-                  </td>
-                </tr>
-              </table>
-            </td>
-          </tr>
-          <!--  -->
-          <tr>
-            <td>
-              <table cellspacing="0" cellpadding="0" border="0" margin="0" role="presentation" width="100%">
-      
-                <tr>
-                  <td align="center" width="100%" style="padding: 50px 0 0 0;">
-                    <a href="#" style="text-decoration: none;">
-                      <img src="https://i.postimg.cc/kgT133WP/guccisseethru.png" alt="gucci-double-g-logo"
-                        style="width:40px;margin:0; padding-top: 20px;">
-                    </a>
+                      <tr>
+                        <td align="center" width="100%" style="padding: 50px 0 0 0;">
+                          <a href="#" style="text-decoration: none;">
+                            <img src="https://i.postimg.cc/kgT133WP/guccisseethru.png" alt="gucci-double-g-logo"
+                              style="width:40px;margin:0; padding-top: 20px;">
+                          </a>
 
 
-                    <a href="#" style="text-decoration: none; color: #1a1616;">
-                      <span style="font-weight: 400;font-size: 20px;
+                          <a href="#" style="text-decoration: none; color: #1a1616;">
+                            <span style="font-weight: 400;font-size: 20px;
                       text-decoration: none;
                       margin: 0; ">
-                        Download The Gucci App
-                      </span>
+                              Download The Gucci App
+                            </span>
+                          </a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!--! social media links  no table-->
+          <tr>
+            <td>
+              <table cellspacing="0" cellpadding="0" border="0" margin="0" role="presentation" align="center">
+                <tr>
+                  <td align="center" style="text-align: center; padding: 30px 0 10px 0;">
+                    <a href="https://www.facebook.com/" style="text-decoration: none;">
+                      <img class="social" src="https://i.postimg.cc/PNGyydG1/facebook.png" alt="facebook-link"
+                        style="width: 30px;padding: 20px 20px 0 20px;" />
+                    </a>
+
+                    <a href="https://www.youtube.com/" style="text-decoration: none;">
+                      <img class="social" src="https://i.postimg.cc/C11cLvHn/youtube.png" alt="youtube-link"
+                        style="width: 30px;padding: 20px 20px 0 20px ;" />
+                    </a>
+
+                    <a href="https://www.instagram.com/" style="text-decoration: none;">
+                      <img class="social" src="https://i.postimg.cc/RVTMjtDx/insta-min.png" alt="instagram-link" style="width: 30px;
+              padding: 20px 20px 0 20px;">
+                    </a>
+
+                    <a href="https://www.twitter.com/" style="text-decoration: none;">
+                      <img class="social" src="https://i.postimg.cc/zBc0Ln0t/twitter.png" alt="twitter-link" style="width: 30px;
+            padding: 20px 20px 0 20px;" />
                     </a>
                   </td>
                 </tr>
               </table>
             </td>
           </tr>
-        </table>
-      </td>
-    </tr>
-    <!--  -->
-    <tr>
-      <td align="center" style="text-align: center; padding: 30px 0 10px 0;">
-        <a href="#" style="text-decoration: none;">
-          <img src="https://i.postimg.cc/PNGyydG1/facebook.png" alt="facebook-link"
-            style="width: 30px;padding: 20px 20px 0 20px;" />
-        </a>
-
-        <a href="#" style="text-decoration: none;">
-          <img src="https://i.postimg.cc/C11cLvHn/youtube.png" alt="youtube-link"
-            style="width: 30px;padding: 20px 20px 0 20px ;" />
-        </a>
-
-        <a href="#" style="text-decoration: none;">
-          <img src="https://i.postimg.cc/ Vv04XdhY/insta.png" alt="instagram-link" style="width: 30px;
-              padding: 20px 20px 0 20px;">
-        </a>
-
-        <a href="#" style="text-decoration: none;">
-          <img src="https://i.postimg.cc/zBc0Ln0t/twitter.png" alt="twitter-link" style="width: 30px;
-            padding: 20px 20px 0 20px;" />
-        </a>
-      </td>
-    </tr>
-    <!-- row -->
-    <tr>
-      <td align="center" style="padding-top: 25px; font-size: 16px;">
-        <a href="#" style="text-decoration: none; color: black;">
-          <span>Find A Store</span>
-        </a>
-      </td>
-    </tr>
-    <!--  -->
-    <tr>
-      <td>
-        <table cellspacing="0" cellpadding="0" border="0" margin="0" role="presentation">
+          <!-- !copy row no table -->
           <tr>
-            <td align="center" style="padding:20px 40px 0 40px; font-size: 14px; line-height:1.4;">
-              <p style="margin:0;">Payment options through Affirm are subject to an eligibility check and are provided
-                by these lending
-                partners: affirm.com/lenders. Eligibility determinations are not conducted by Gucci. All lending
-                decisions are the sole responsibility of Affirm and/or its lending partners. Options depend on your
-                purchase amount, and a down payment may be required. CA residents: Loans by Affirm Loan Services, LLC
-                are made or arranged pursuant to a California Finance Lender license.
-              </p>
+            <td align="center" style="padding-top: 25px; font-size: 16px;">
+              <a href="#" style="text-decoration: none; color: black;">
+                <span>Find A Store</span>
+              </a>
             </td>
           </tr>
-          <!--row  -->
+          <!--!copy row with table  -->
           <tr>
-            <td align="center" style="font-size: 13px;padding-top: 8px;">
-              <p style="margin:0;">Guccioo Gucci S.p.A., Via Tornabuoni 73/r, 50123 Firenze, Italia
-              </p>
-            </td>
-          </tr>
-          <!--row  -->
-          <tr>
-            <td align="center" style="font-size: 13px; padding-top: 8px;">
-              <span><a href="#">Unsubscribe | Privacy Policy</a></span>
-            </td>
-          </tr>
-          <!--row  -->
-          <tr>
-            <td align="center" style="font-size: 14px;
+            <td>
+              <table cellspacing="0" cellpadding="0" border="0" margin="0" role="presentation">
+                <tr>
+                  <td align="center" style="padding:20px 40px 0 40px; font-size: 14px; line-height:1.4;">
+                    <p style="margin:0;">Payment options through Affirm are subject to an eligibility check and are
+                      provided
+                      by these lending
+                      partners: ok ok Gucci didn't make this email Charles Coston did. I did use all of these Gucci
+                      images though. Did you know they have their own font too. Wow. I'm using this for an HTML email
+                      developer portfolio. If you're looking at this on a desktop I would love for you to check it out
+                      in chrome inspector in mobile view. Images stacked and all. The original email from Gucci didn't
+                      stack the images. Hey I don't know maybe that's a marketing thing. Well hope you enjoyed this one.
+                    </p>
+                  </td>
+                </tr>
+                <!-- copy row  -->
+                <tr>
+                  <td align="center" style="font-size: 13px;padding-top: 8px;">
+                    <p style="margin:0;">Guccioo Gucci S.p.A., Via Tornabuoni 73/r, 50123 Firenze, Italia
+                    </p>
+                  </td>
+                </tr>
+                <!--unsubscribe row  -->
+                <tr>
+                  <td align="center" style="font-size: 13px; padding-top: 8px;">
+                    <span><a href="#">Unsubscribe | Privacy Policy</a></span>
+                  </td>
+                </tr>
+                <!-- privacy policy row  -->
+                <tr>
+                  <td align="center" style="font-size: 14px;
             line-height: 1.4; padding:20px 40px 0 40px;">
-              <p style="margin:0;">We have improved our Privacy Policy and have done our best to make it easier to
-                understand. You can
-                know more about your Privacy with Gucci and your rights here.
-              </p>
+                    <p style="margin:0;">We have improved our Privacy Policy and have done our best to make it easier to
+                      understand. You can
+                      know more about your Privacy with Gucci and your rights here.
+                    </p>
+                  </td>
+                </tr>
+              </table>
             </td>
           </tr>
         </table>
-      </td>
-    </tr>
 </body>
 
 </html>
+<!-- !looks good both phones putsmail  -->
